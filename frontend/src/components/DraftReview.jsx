@@ -11,7 +11,7 @@ const DraftReview = () => {
 
     const fetchDrafts = async () => {
         try {
-            const response = await axios.get('http://localhost:8000/agent/drafts');
+            const response = await axios.get('/api/agent/drafts');
             setDrafts(response.data);
         } catch (error) {
             console.error("Error fetching drafts:", error);

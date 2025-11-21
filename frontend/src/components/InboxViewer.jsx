@@ -12,7 +12,7 @@ const InboxViewer = ({ onSelectEmail }) => {
 
     const fetchEmails = async () => {
         try {
-            const response = await axios.get('http://localhost:8000/inbox/');
+            const response = await axios.get('/api/inbox/');
             setEmails(response.data);
             setLoading(false);
         } catch (error) {

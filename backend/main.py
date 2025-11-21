@@ -6,7 +6,12 @@ from .routers import inbox, prompts, agent
 # Create tables
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI(title="Prompt-Driven Email Agent")
+import os
+
+app = FastAPI(
+    title="Prompt-Driven Email Agent",
+    root_path="/api" if os.getenv("VERCEL") else ""
+)
 
 # CORS
 app.add_middleware(

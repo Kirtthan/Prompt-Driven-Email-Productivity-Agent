@@ -16,7 +16,7 @@ const AgentChat = ({ selectedEmail }) => {
         setLoading(true);
 
         try {
-            const response = await axios.post('http://localhost:8000/agent/chat', {
+            const response = await axios.post('/api/agent/chat', {
                 email_id: selectedEmail.id,
                 query: userMsg.content
             });
@@ -53,8 +53,8 @@ const AgentChat = ({ selectedEmail }) => {
                 {messages.map((msg, idx) => (
                     <div key={idx} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                         <div className={`max-w-[80%] rounded-lg p-3 ${msg.role === 'user'
-                                ? 'bg-blue-600 text-white rounded-br-none'
-                                : 'bg-gray-100 text-gray-800 rounded-bl-none'
+                            ? 'bg-blue-600 text-white rounded-br-none'
+                            : 'bg-gray-100 text-gray-800 rounded-bl-none'
                             }`}>
                             <p className="text-sm">{msg.content}</p>
                         </div>

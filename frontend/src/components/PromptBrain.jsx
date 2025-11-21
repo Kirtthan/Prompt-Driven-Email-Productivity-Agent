@@ -13,7 +13,7 @@ const PromptBrain = () => {
 
     const fetchPrompts = async () => {
         try {
-            const response = await axios.get('http://localhost:8000/prompts/');
+            const response = await axios.get('/api/prompts/');
             setPrompts(response.data);
         } catch (error) {
             console.error("Error fetching prompts:", error);
@@ -27,7 +27,7 @@ const PromptBrain = () => {
 
     const handleSave = async (id) => {
         try {
-            await axios.put(`http://localhost:8000/prompts/${id}`, editForm);
+            await axios.put(`/api/prompts/${id}`, editForm);
             setEditingId(null);
             fetchPrompts();
         } catch (error) {
