@@ -1,0 +1,162 @@
+[
+  {
+    "id": "1",
+    "sender": "newsletter@techweekly.com",
+    "subject": "Tech Weekly: The Rise of AI Agents",
+    "body": "This week we explore how AI agents are transforming productivity. Also, new release of Python 3.14...",
+    "timestamp": "2023-10-27T09:00:00Z",
+    "read": false
+  },
+  {
+    "id": "2",
+    "sender": "boss@company.com",
+    "subject": "URGENT: Q4 Report Needed",
+    "body": "Hi, I need the Q4 report on my desk by Friday 5 PM. Please prioritize this.",
+    "timestamp": "2023-10-27T10:15:00Z",
+    "read": false
+  },
+  {
+    "id": "3",
+    "sender": "spam@offers.com",
+    "subject": "You won a cruise!",
+    "body": "Click here to claim your free cruise to the Bahamas! Limited time offer.",
+    "timestamp": "2023-10-27T11:00:00Z",
+    "read": false
+  },
+  {
+    "id": "4",
+    "sender": "alice@team.com",
+    "subject": "Project Sync Meeting",
+    "body": "Can we meet tomorrow at 2 PM to discuss the roadmap? Let me know if that works.",
+    "timestamp": "2023-10-27T11:30:00Z",
+    "read": false
+  },
+  {
+    "id": "5",
+    "sender": "jira@updates.com",
+    "subject": "JIRA: Ticket #452 Updated",
+    "body": "User 'bob' commented on ticket #452: 'Fixed the login bug.'",
+    "timestamp": "2023-10-27T12:00:00Z",
+    "read": false
+  },
+  {
+    "id": "6",
+    "sender": "mom@family.com",
+    "subject": "Sunday Lunch",
+    "body": "Are you coming over for lunch this Sunday? Dad is making lasagna.",
+    "timestamp": "2023-10-27T13:00:00Z",
+    "read": false
+  },
+  {
+    "id": "7",
+    "sender": "hr@company.com",
+    "subject": "Open Enrollment for Benefits",
+    "body": "It's that time of year again! Please complete your benefits enrollment by Nov 15th.",
+    "timestamp": "2023-10-27T14:00:00Z",
+    "read": false
+  },
+  {
+    "id": "8",
+    "sender": "recruiter@linkedin.com",
+    "subject": "Opportunity at Google",
+    "body": "I saw your profile and thought you'd be a great fit for our Senior Engineer role...",
+    "timestamp": "2023-10-27T15:00:00Z",
+    "read": false
+  },
+  {
+    "id": "9",
+    "sender": "billing@aws.com",
+    "subject": "Invoice Available",
+    "body": "Your AWS invoice for October is now available. Total: $45.20.",
+    "timestamp": "2023-10-27T16:00:00Z",
+    "read": false
+  },
+  {
+    "id": "10",
+    "sender": "devops@company.com",
+    "subject": "Server Downtime Alert",
+    "body": "Production server-01 is experiencing high load. Please investigate immediately.",
+    "timestamp": "2023-10-27T16:30:00Z",
+    "read": false
+  },
+  {
+    "id": "11",
+    "sender": "newsletter@cooking.com",
+    "subject": "5 Easy Pasta Recipes",
+    "body": "Tired after work? Try these 5 easy pasta recipes that take less than 20 minutes.",
+    "timestamp": "2023-10-28T09:00:00Z",
+    "read": false
+  },
+  {
+    "id": "12",
+    "sender": "client@bigcorp.com",
+    "subject": "Feedback on Design",
+    "body": "We reviewed the mockups. We like the direction but want to change the blue to green.",
+    "timestamp": "2023-10-28T10:00:00Z",
+    "read": false
+  },
+  {
+    "id": "13",
+    "sender": "security@company.com",
+    "subject": "Security Training Due",
+    "body": "Reminder: You have 3 days left to complete the mandatory security training.",
+    "timestamp": "2023-10-28T11:00:00Z",
+    "read": false
+  },
+  {
+    "id": "14",
+    "sender": "marketing@tool.com",
+    "subject": "Last Chance: 50% Off",
+    "body": "Our sale ends tonight! Don't miss out on 50% off all plans.",
+    "timestamp": "2023-10-28T12:00:00Z",
+    "read": false
+  },
+  {
+    "id": "15",
+    "sender": "bob@team.com",
+    "subject": "Code Review Request",
+    "body": "Can you take a look at PR #102? I think I fixed the race condition.",
+    "timestamp": "2023-10-28T13:00:00Z",
+    "read": false
+  },
+  {
+    "id": "16",
+    "sender": "event@meetup.com",
+    "subject": "New Event: Python NYC",
+    "body": "Join us for the monthly Python NYC meetup this Thursday.",
+    "timestamp": "2023-10-28T14:00:00Z",
+    "read": false
+  },
+  {
+    "id": "17",
+    "sender": "ceo@company.com",
+    "subject": "All Hands Meeting",
+    "body": "Please join us for the quarterly All Hands meeting next Monday at 10 AM.",
+    "timestamp": "2023-10-28T15:00:00Z",
+    "read": false
+  },
+  {
+    "id": "18",
+    "sender": "support@saas.com",
+    "subject": "Ticket #999 Resolved",
+    "body": "Your ticket regarding the login issue has been resolved. Please verify.",
+    "timestamp": "2023-10-28T16:00:00Z",
+    "read": false
+  },
+  {
+    "id": "19",
+    "sender": "unknown@random.com",
+    "subject": "Hello",
+    "body": "I have a business proposition for you. Please reply for details.",
+    "timestamp": "2023-10-28T17:00:00Z",
+    "read": false
+  },
+  {
+    "id": "20",
+    "sender": "charlie@team.com",
+    "subject": "Happy Birthday!",
+    "body": "Happy birthday! Hope you have a great day.",
+    "timestamp": "2023-10-28T18:00:00Z",
+    "read": false
+  }
+]
