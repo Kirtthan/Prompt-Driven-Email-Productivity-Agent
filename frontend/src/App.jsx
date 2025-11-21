@@ -9,10 +9,15 @@ function App() {
   const [activeTab, setActiveTab] = useState('inbox');
   const [selectedEmail, setSelectedEmail] = useState(null);
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [draftRefreshTrigger, setDraftRefreshTrigger] = useState(0);
 
   const handleEmailSelect = (email) => {
     setSelectedEmail(email);
     setActiveTab('chat');
+  };
+
+  const handleDraftCreated = () => {
+    setDraftRefreshTrigger(prev => prev + 1);
   };
 
   const renderContent = () => {
@@ -22,9 +27,9 @@ function App() {
       case 'brain':
         return <PromptBrain />;
       case 'chat':
-        return <AgentChat selectedEmail={selectedEmail} />;
+        return <AgentChat selectedEmail={selectedEmail} onDraftCreated={handleDraftCreated} />;
       case 'drafts':
-        return <DraftReview />;
+        return <DraftReview key={draftRefreshTrigger} />;
       default:
         return <InboxViewer onSelectEmail={handleEmailSelect} />;
     }
