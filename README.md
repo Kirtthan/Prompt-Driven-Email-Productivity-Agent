@@ -1,176 +1,79 @@
-# Prompt-Driven Email Productivity Agent
+# 🌿 Nexus: Your Intelligent Email Sanctuary
 
-An intelligent email assistant powered by AI that helps you manage your inbox with natural language prompts.
+Welcome to **Nexus**, a reimagined email experience designed to bring calm, focus, and intelligence to your inbox.
 
-## 🚀 Quick Start
+We built Nexus because we believe email shouldn't be a chore. It should be a place where you feel in control, supported by intelligent tools that understand your context.
+
+## ✨ The "Kozowood" Design Philosophy
+
+Nexus isn't just about features; it's about *feeling*. We've adopted the **Kozowood** design system—an aesthetic grounded in nature, serenity, and warmth.
+
+- **Earthy & Serene**: A palette of Warm Off-White, Slate Gray, and accents of Sky Blue, Fern Green, and Clay.
+- **Glassmorphism**: Subtle transparencies that create depth and a modern, airy feel.
+- **Fluid Motion**: Smooth, organic animations that make every interaction feel alive.
+- **Focus-First**: A clean, distraction-free interface that puts your content center stage.
+
+## 🧠 Powered by Intelligence
+
+Under the hood, Nexus connects directly to the **Gemini 2.5 Flash** model. It doesn't just "generate text"; it *understands* your inbox.
+
+- **Context-Aware**: Ask "Find emails about Project X", and Nexus will search your actual emails to give you a specific answer.
+- **Smart Drafting**: Need to reply to a client? Nexus drafts professional, context-relevant responses in seconds.
+- **Prompt Brain**: A dedicated space to manage and refine the prompts that power your assistant.
+
+## 🚀 Getting Started
+
+You can run Nexus in two modes: **Frontend-Only** (lightweight, uses mock data) or **Full Stack** (with a Python backend).
 
 ### Prerequisites
-- Python 3.13+
-- Node.js 18+
-- Gemini API Key
+- Node.js (v18+)
+- A Gemini API Key (for the AI features)
 
-### Setup
+### 1️⃣ Quick Start (Frontend Only)
+This is the easiest way to experience the UI and AI features immediately.
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Kirtthan/Prompt-Driven-Email-Productivity-Agent.git
-   cd Prompt-Driven-Email-Productivity-Agent
-   ```
+1.  **Clone the repo:**
+    ```bash
+    git clone https://github.com/Kirtthan/Prompt-Driven-Email-Productivity-Agent.git
+    cd Prompt-Driven-Email-Productivity-Agent/frontend
+    ```
 
-2. **Set up environment variables**
-   Create a `.env` file in the root directory:
-   ```
-   API_KEY=your_gemini_api_key_here
-   ```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-3. **Install backend dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+3.  **Run the app:**
+    ```bash
+    npm run dev
+    ```
+    Open `http://localhost:5173` and enjoy!
 
-4. **Install frontend dependencies**
-   ```bash
-   cd frontend
-   npm install
-   cd ..
-   ```
+### 2️⃣ Full Stack Setup (Optional)
+If you want to extend the backend with your own Python logic:
 
-### Running the Application
+1.  **Install Backend Dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-#### Option 1: Use the start script (Windows)
-```powershell
-.\start.ps1
-```
+2.  **Start the Backend:**
+    ```bash
+    python -m uvicorn backend.main:app --reload
+    ```
 
-#### Option 2: Manual start
+## 🛠️ Tech Stack
 
-**Terminal 1 - Backend:**
-```bash
-python -m uvicorn backend.main:app --reload --port 8000
-```
+- **Frontend**: React, Vite, Tailwind CSS
+- **AI**: Google Gemini API (gemini-2.5-flash)
+- **Icons**: Lucide React
+- **Backend**: FastAPI (Optional)
 
-**Terminal 2 - Frontend:**
-```bash
-cd frontend
-npm run dev
-```
+## 🤝 Join the Journey
 
-Then open http://localhost:5173 in your browser.
+Nexus is a labor of love. We're constantly exploring new ways to make digital communication more human.
 
-## 📧 Features
+Feel free to fork, star, or contribute!
 
-### ✨ Interactive Draft Generation
-- Ask the agent to draft email replies
-- Get 3 options with different tones (Professional, Friendly, Brief)
-- Copy drafts to clipboard or save them directly
-
-### 🎨 Beautiful UI
-- Modern, responsive design
-- Markdown rendering for rich text
-- Interactive draft cards
-- Quick action buttons
-
-### 🤖 AI-Powered
-- Natural language email categorization
-- Action item extraction
-- Smart reply suggestions
-- Context-aware responses
-
-### 📝 Prompt Brain
-- Customize AI behavior with custom prompts
-- Define categorization rules
-- Configure response styles
-
-## 🛠️ Useful Scripts
-
-### Reset Database
-When you update `mock_inbox.json`, run this to reload the emails:
-```powershell
-.\reset-database.ps1
-```
-
-This will:
-1. Stop the backend server
-2. Delete the old database
-3. Restart the server with fresh mock data
-
-## 📁 Project Structure
-
-```
-├── backend/
-│   ├── main.py              # FastAPI application
-│   ├── database.py          # Database configuration
-│   ├── models.py            # SQLAlchemy models
-│   ├── schemas.py           # Pydantic schemas
-│   ├── routers/             # API endpoints
-│   │   ├── inbox.py
-│   │   ├── prompts.py
-│   │   └── agent.py
-│   └── services/            # Business logic
-│       ├── llm_service.py   # LLM integration
-│       └── ingestion.py     # Email ingestion
-├── frontend/
-│   ├── src/
-│   │   ├── App.jsx          # Main application
-│   │   └── components/      # React components
-│   │       ├── InboxViewer.jsx
-│   │       ├── AgentChat.jsx
-│   │       ├── DraftCard.jsx
-│   │       ├── DraftReview.jsx
-│   │       └── PromptBrain.jsx
-│   └── package.json
-├── data/
-│   └── mock_inbox.json      # Sample emails
-├── start.ps1                # Quick start script
-├── reset-database.ps1       # Database reset script
-└── requirements.txt         # Python dependencies
-```
-
-## 🔧 API Endpoints
-
-- `GET /inbox/` - List all emails
-- `GET /inbox/{email_id}` - Get specific email
-- `POST /inbox/ingest` - Reload emails from mock data
-- `POST /agent/chat` - Chat with AI agent
-- `POST /agent/draft` - Create email draft
-- `GET /prompts/` - List all prompts
-- `POST /prompts/` - Create new prompt
-
-API Documentation: http://127.0.0.1:8000/docs
-
-## 🎯 Usage Examples
-
-### Draft a Reply
-1. Select an email from the inbox
-2. Click "Draft Reply" or type "draft a reply to this email"
-3. Choose from 3 tone options
-4. Copy or save the draft
-
-### Ask Questions
-- "Summarize this email"
-- "What action items are in this email?"
-- "Is this email urgent?"
-
-### Customize Behavior
-1. Go to "Prompt Brain"
-2. Edit the system prompts
-3. Define custom categorization rules
-
-## 🚀 Deployment
-
-The application is configured for Vercel deployment:
-- Backend: Serverless functions
-- Frontend: Static site
-- See `vercel.json` for configuration
-
-## 📝 License
-
-MIT License - feel free to use this project for learning or production!
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📧 Contact
-
-For questions or feedback, please open an issue on GitHub.
+---
+*Crafted with ❤️ and a touch of magic.*
