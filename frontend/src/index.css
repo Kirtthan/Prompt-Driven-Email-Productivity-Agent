@@ -1,19 +1,161 @@
 @import "tailwindcss";
 
 @theme {
-  --color-gray-50: #f9fafb;
-  --color-gray-100: #f3f4f6;
-  --color-gray-200: #e5e7eb;
-  --color-gray-800: #1f2937;
-  --color-gray-900: #111827;
-  --color-blue-50: #eff6ff;
-  --color-blue-100: #dbeafe;
-  --color-blue-500: #3b82f6;
-  --color-blue-600: #2563eb;
-  --color-blue-700: #1d4ed8;
+  /* Kozowood Color Palette */
+
+  /* Backgrounds */
+  --color-bg-primary: #FDF6ED;
+  /* Warm off-white main background */
+  --color-bg-secondary: #FFFFFF;
+  /* Pure white for cards */
+  --color-bg-tertiary: #F5F2E9;
+  /* Slightly darker warm bg */
+  --color-bg-hover: #FAF8F3;
+  /* Hover states */
+
+  /* Text */
+  --color-text-primary: #4B5563;
+  /* Slate gray - main text */
+  --color-text-secondary: #6B7280;
+  /* Lighter slate - secondary text */
+  --color-text-tertiary: #9CA3AF;
+  /* Light gray - hints/placeholders */
+  --color-text-white: #FFFFFF;
+  /* For dark backgrounds */
+
+  /* Accents */
+  --color-accent-blue: #60A5FA;
+  /* Sky blue - CTAs, links */
+  --color-accent-green: #4ADE80;
+  /* Fern green - success */
+  --color-accent-clay: #B5764A;
+  /* Clay/terracotta - highlights */
+  --color-accent-sand: #D6C3A5;
+  /* Sand - borders */
+
+  /* Status */
+  --color-status-success: #4ADE80;
+  --color-status-warning: #FBBF24;
+  --color-status-error: #EF4444;
+  --color-status-info: #60A5FA;
+
+  /* Borders */
+  --color-border-light: #E5E7EB;
+  --color-border-medium: #D6C3A5;
+  --color-border-dark: #9CA3AF;
+
+  /* Fonts */
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Outfit', 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Animations */
+  --animate-fade-in: fadeIn 0.4s ease-out;
+  --animate-scale-in: scaleIn 0.3s ease-out;
+  --animate-slide-in: slideIn 0.3s ease-out;
+  --animate-shimmer: shimmer 1.5s infinite;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+
+    100% {
+      background-position: 200% 0;
+    }
+  }
 }
 
-body {
-  background-color: var(--color-gray-50);
-  color: var(--color-gray-900);
+/* Base Styles */
+@layer base {
+  body {
+    @apply bg-[var(--color-bg-primary)] text-[var(--color-text-primary)] font-sans antialiased;
+    background-image: linear-gradient(135deg, var(--color-bg-primary) 0%, var(--color-bg-tertiary) 100%);
+    background-attachment: fixed;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display font-bold tracking-tight text-[var(--color-text-primary)];
+  }
+}
+
+/* Component Classes */
+@layer components {
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-[var(--color-border-light)] shadow-lg;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-br from-[var(--color-accent-blue)] to-[#38BDF8] text-white font-semibold px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 active:translate-y-0 active:shadow-sm border-none;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-[var(--color-text-secondary)] font-medium px-5 py-2.5 rounded-lg border border-[var(--color-border-light)] hover:bg-[var(--color-bg-hover)] hover:text-[var(--color-text-primary)] hover:border-[var(--color-border-medium)] transition-all duration-300;
+  }
+
+  .input-field {
+    @apply w-full bg-white border border-[var(--color-border-light)] rounded-lg px-4 py-2.5 text-[var(--color-text-primary)] placeholder-[var(--color-text-tertiary)] focus:outline-none focus:border-[var(--color-accent-blue)] focus:ring-2 focus:ring-[var(--color-accent-blue)]/10 transition-all duration-200;
+  }
+
+  .badge {
+    @apply px-3 py-1 rounded-full text-xs font-semibold border;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-hover);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-medium);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-clay);
 }
