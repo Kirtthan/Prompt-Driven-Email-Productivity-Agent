@@ -1,0 +1,202 @@
+[
+  {
+    "id": "1",
+    "sender": "sarah.chen@techvision.io",
+    "subject": "Re: Q4 Product Roadmap - Need Your Input",
+    "body": "Hi there,\n\nThanks for the initial draft of the Q4 roadmap. I've reviewed it with the engineering team and we have some concerns about the timeline for the AI features.\n\nSpecifically:\n- The natural language processing module seems ambitious for a 6-week sprint\n- We'll need at least 2 weeks for security audits before launch\n- The mobile app integration should probably be pushed to Q1 2024\n\nCan we schedule a call this week to discuss? I'm free Tuesday afternoon or Thursday morning.\n\nBest,\nSarah Chen\nVP of Engineering, TechVision",
+    "timestamp": "2025-11-21T08:15:00Z",
+    "read": false
+  },
+  {
+    "id": "2",
+    "sender": "notifications@github.com",
+    "subject": "[Prompt-Driven-Email] Pull Request #47: Add email categorization feature",
+    "body": "michaelwong opened a pull request:\n\nThis PR adds automatic email categorization using GPT-4. The categorizer can identify:\n- Urgent/Important emails\n- Newsletters and marketing\n- Personal vs. work emails\n- Action items requiring response\n\nI've added unit tests and updated the documentation. Ready for review!\n\nFiles changed: 8 files (+342, -15)\n\nView Pull Request: https://github.com/user/repo/pull/47",
+    "timestamp": "2025-11-21T09:42:00Z",
+    "read": false
+  },
+  {
+    "id": "3",
+    "sender": "david.martinez@acmecorp.com",
+    "subject": "URGENT: Production API Rate Limit Exceeded",
+    "body": "Team,\n\nWe're seeing a massive spike in API calls to our production endpoint. Current rate: 15,000 requests/minute (normal is ~2,000).\n\nThis started at 9:30 AM EST. I've temporarily increased the rate limit to prevent service disruption, but we need to investigate the source immediately.\n\nPreliminary analysis shows most requests are coming from the mobile app's background sync feature. Possible infinite loop?\n\nPlease drop everything and join the war room: https://meet.google.com/xyz-urgent\n\nDavid Martinez\nSenior DevOps Engineer",
+    "timestamp": "2025-11-21T09:35:00Z",
+    "read": false
+  },
+  {
+    "id": "4",
+    "sender": "newsletter@morningbrew.com",
+    "subject": "☕ Morning Brew: Tech layoffs, AI regulation, and the future of remote work",
+    "body": "Good morning!\n\nHere's what you need to know today:\n\n🚨 TECH LAYOFFS: Meta announces 5,000 job cuts as part of 'efficiency' initiative\n🤖 AI REGULATION: EU finalizes AI Act with strict rules for high-risk systems  \n🏠 REMOTE WORK: New study shows hybrid workers are 13% more productive\n💰 MARKETS: Tech stocks rally as inflation shows signs of cooling\n\nPlus: Why everyone's talking about 'AI agents' and what it means for your job.\n\nRead the full newsletter →\n\nUnsubscribe | Manage preferences",
+    "timestamp": "2025-11-21T06:00:00Z",
+    "read": false
+  },
+  {
+    "id": "5",
+    "sender": "jessica.thompson@designstudio.co",
+    "subject": "Updated mockups for the dashboard redesign 🎨",
+    "body": "Hey!\n\nI've finished the updated mockups based on last week's feedback. Here's what changed:\n\n✅ Moved the navigation to the left sidebar (as requested)\n✅ Increased font sizes for better accessibility\n✅ Added dark mode support\n✅ Simplified the color palette to match brand guidelines\n\nFigma link: https://figma.com/file/dashboard-v2\n\nI think this is much cleaner! Let me know what you think. If you approve, I can hand this off to the dev team by Friday.\n\nAlso - do you want me to create a prototype for the mobile version too?\n\nCheers,\nJess\n\nP.S. I added some fun micro-interactions. Check out the hover states on the cards! 😊",
+    "timestamp": "2025-11-21T10:20:00Z",
+    "read": false
+  },
+  {
+    "id": "6",
+    "sender": "recruiter@stripe.com",
+    "subject": "Senior Full-Stack Engineer opportunity at Stripe",
+    "body": "Hi,\n\nI came across your profile and was impressed by your work on AI-powered productivity tools. We have an exciting opportunity at Stripe that I think would be a great fit.\n\nRole: Senior Full-Stack Engineer (Payments Platform)\nLocation: San Francisco or Remote (US)\nSalary: $180k - $240k + equity\n\nWhat you'd work on:\n- Building next-generation payment APIs used by millions of businesses\n- Scaling systems to handle billions of dollars in transactions\n- Working with cutting-edge tech: React, Node.js, Go, Kubernetes\n\nWe're looking for someone with:\n- 5+ years of full-stack experience\n- Strong system design skills\n- Experience with high-scale distributed systems\n\nInterested in learning more? I'd love to schedule a quick 15-minute call to discuss.\n\nBest regards,\nEmily Rodriguez\nTechnical Recruiter, Stripe",
+    "timestamp": "2025-11-20T14:30:00Z",
+    "read": false
+  },
+  {
+    "id": "7",
+    "sender": "mom.anderson@gmail.com",
+    "subject": "Thanksgiving plans? 🦃",
+    "body": "Hi sweetie,\n\nJust wanted to check in about Thanksgiving! Are you planning to come home this year? Your dad and I would love to see you.\n\nI'm thinking of doing the usual turkey dinner on Thursday, and maybe we could go see a movie on Friday? Your sister Emily is bringing her new boyfriend (yes, another one 😄).\n\nAlso, Grandma keeps asking about you. She wants to know if you're eating enough vegetables and if you've found \"a nice person to settle down with.\" You know how she is!\n\nLet me know soon so I can plan the menu. And please tell me you're not working through the holiday again like last year!\n\nLove you,\nMom\n\nP.S. I tried to text you but I think my phone is broken again. Can you help me fix it when you visit?",
+    "timestamp": "2025-11-20T19:45:00Z",
+    "read": false
+  },
+  {
+    "id": "8",
+    "sender": "billing@aws.amazon.com",
+    "subject": "Your AWS bill is ready - November 2025",
+    "body": "Your AWS bill for November 2025 is now available.\n\nAccount: 1234-5678-9012\nBilling Period: Nov 1 - Nov 30, 2025\nTotal Amount Due: $847.32\nDue Date: December 15, 2025\n\nTop Services:\n- EC2: $423.15\n- S3: $156.80\n- RDS: $189.45\n- Lambda: $77.92\n\nView detailed breakdown: https://console.aws.amazon.com/billing\n\nNote: Your usage increased 34% compared to last month. Consider reviewing your EC2 instances for optimization opportunities.\n\nQuestions? Contact AWS Support\n\nAmazon Web Services",
+    "timestamp": "2025-11-21T01:00:00Z",
+    "read": false
+  },
+  {
+    "id": "9",
+    "sender": "alex.kumar@clientcompany.com",
+    "subject": "Meeting notes + action items from today's sync",
+    "body": "Hi team,\n\nThanks for a productive meeting today! Here's a quick summary:\n\n📋 DECISIONS MADE:\n- Moving forward with Option B for the database architecture\n- Launch date pushed to Dec 15th (instead of Dec 1st)\n- Weekly check-ins every Tuesday at 2 PM\n\n✅ ACTION ITEMS:\n- @Sarah: Update technical spec doc by Friday\n- @Mike: Set up staging environment by Monday\n- @You: Review security audit findings and provide feedback by Wed\n- @Lisa: Schedule user testing sessions for next week\n\n🚧 BLOCKERS:\n- Still waiting on legal approval for the data processing agreement\n- Need design team to finalize the onboarding flow\n\nNext meeting: Tuesday, Nov 28th at 2 PM\nZoom link: https://zoom.us/j/123456789\n\nLet me know if I missed anything!\n\nAlex",
+    "timestamp": "2025-11-21T11:30:00Z",
+    "read": false
+  },
+  {
+    "id": "10",
+    "sender": "security@company.com",
+    "subject": "🔒 Security Alert: Suspicious login attempt detected",
+    "body": "SECURITY ALERT\n\nWe detected a login attempt to your account from an unrecognized device:\n\nLocation: Moscow, Russia\nIP Address: 185.220.101.47\nDevice: Windows 10, Chrome browser\nTime: Nov 21, 2025 at 3:42 AM EST\n\nWe blocked this login attempt because:\n- Location is unusual for your account\n- Multiple failed password attempts\n- Device fingerprint doesn't match your known devices\n\nACTION REQUIRED:\n1. Change your password immediately\n2. Enable two-factor authentication if you haven't already\n3. Review recent account activity\n\nIf this was you, please verify: https://security.company.com/verify\n\nIf this wasn't you, your account may be compromised. Contact security@company.com immediately.\n\nStay safe,\nSecurity Team",
+    "timestamp": "2025-11-21T03:45:00Z",
+    "read": false
+  },
+  {
+    "id": "11",
+    "sender": "noreply@linkedin.com",
+    "subject": "You appeared in 47 searches this week",
+    "body": "Your profile is getting noticed!\n\n👀 47 recruiters viewed your profile this week\n📈 Your profile views are up 23% from last week\n\nTop companies searching for people like you:\n- Google\n- Microsoft  \n- Amazon\n- Meta\n- OpenAI\n\nBoost your visibility:\n✓ Add 3 new skills to your profile\n✓ Share an article or post\n✓ Get endorsed by colleagues\n\nPeople also viewed:\n- Sarah Chen, Senior Engineer at Google\n- Michael Wong, Tech Lead at Stripe\n- Jessica Lee, Product Manager at Meta\n\nView your profile analytics →\n\nLinkedIn",
+    "timestamp": "2025-11-20T18:00:00Z",
+    "read": false
+  },
+  {
+    "id": "12",
+    "sender": "priya.patel@venture.capital",
+    "subject": "Investment opportunity - Let's chat?",
+    "body": "Hi,\n\nI'm a partner at Sequoia Capital and I've been following your work on AI productivity tools with great interest. Your approach to prompt-driven automation is exactly what we're looking for.\n\nWe're actively investing in the AI application layer and would love to learn more about what you're building. Are you raising a seed round?\n\nSome context:\n- We recently led the Series A for a similar company (now at $50M ARR)\n- We have deep expertise in developer tools and AI infrastructure\n- We can provide intros to potential customers and partners\n\nWould you be open to a quick call next week? I'm flexible on timing.\n\nBest,\nPriya Patel\nPartner, Sequoia Capital\n\nP.S. I saw your demo on Twitter - the email drafting feature is incredible!",
+    "timestamp": "2025-11-20T16:20:00Z",
+    "read": false
+  },
+  {
+    "id": "13",
+    "sender": "events@pycon.org",
+    "subject": "PyCon 2026: Call for Proposals is now open! 🐍",
+    "body": "The PyCon 2026 Call for Proposals is officially open!\n\nWe're looking for talks, tutorials, and workshops on:\n- AI/ML and LLMs\n- Web development\n- Data science\n- DevOps and infrastructure\n- Python internals\n- Community and diversity\n\nKey Dates:\n📅 Proposal deadline: January 15, 2026\n📅 Notifications: March 1, 2026  \n📅 Conference: May 15-23, 2026\n📍 Location: Pittsburgh, PA\n\nWhy submit?\n✓ Share your expertise with 3,000+ Python developers\n✓ Free conference pass for speakers\n✓ Travel assistance available\n✓ Join an amazing community\n\nFirst time speaking? We offer mentorship!\n\nSubmit your proposal: https://pycon.org/cfp\n\nQuestions? Reply to this email.\n\nPyCon Team",
+    "timestamp": "2025-11-20T12:00:00Z",
+    "read": false
+  },
+  {
+    "id": "14",
+    "sender": "marcus.johnson@freelance.dev",
+    "subject": "Quick question about your API integration",
+    "body": "Hey,\n\nHope you're doing well! I'm working on a project that needs to integrate with email APIs and I remember you built something similar.\n\nQuick questions:\n1. Did you use Gmail API or IMAP for fetching emails?\n2. How did you handle rate limiting?\n3. Any recommendations for parsing email threads?\n\nI'm happy to buy you coffee/lunch if you have 30 mins to chat! I'm in the Bay Area next week.\n\nAlso - are you still working on that AI email assistant? I'd love to be a beta tester if you need users.\n\nThanks!\nMarcus",
+    "timestamp": "2025-11-21T07:15:00Z",
+    "read": false
+  },
+  {
+    "id": "15",
+    "sender": "hr@company.com",
+    "subject": "Reminder: Performance review self-assessment due Friday",
+    "body": "Hi everyone,\n\nThis is a friendly reminder that your Q4 performance review self-assessments are due this Friday, November 24th.\n\nPlease complete:\n1. Self-assessment form (link in Workday)\n2. Goal progress update\n3. Peer feedback nominations (3-5 colleagues)\n\nYour manager will review your submission and schedule a 1:1 meeting for the week of December 4th.\n\nTips for a strong self-assessment:\n- Use specific examples and metrics\n- Highlight both successes and areas for growth\n- Align accomplishments with company values\n- Be honest and reflective\n\nNeed help? Check out our guide: https://intranet.company.com/reviews\n\nQuestions? Contact hr@company.com\n\nBest,\nHR Team",
+    "timestamp": "2025-11-20T09:00:00Z",
+    "read": false
+  },
+  {
+    "id": "16",
+    "sender": "deals@udemy.com",
+    "subject": "⚡ 24-hour flash sale: All courses $12.99",
+    "body": "Don't miss out! 🎉\n\nFor the next 24 hours, get ANY course for just $12.99 (normally $199.99)\n\nTop picks for you:\n🚀 Complete Python Bootcamp 2025 (4.7★, 500k students)\n🤖 ChatGPT & LLM Development Masterclass (4.8★, 150k students)  \n⚛️ React + Next.js - The Complete Guide (4.9★, 300k students)\n☁️ AWS Certified Solutions Architect (4.6★, 200k students)\n\nSale ends: Tomorrow at 11:59 PM\n\n[Browse all courses] [View cart]\n\nAlready have these? Check out our new AI courses →\n\nUnsubscribe | Manage email preferences",
+    "timestamp": "2025-11-21T05:00:00Z",
+    "read": false
+  },
+  {
+    "id": "17",
+    "sender": "rachel.kim@design.agency",
+    "subject": "Logo concepts - Round 2",
+    "body": "Hi!\n\nBased on your feedback, I've created 3 new logo concepts. I focused on making it more modern and minimalist like you requested.\n\nConcept A: Abstract geometric shape (my favorite!)\nConcept B: Wordmark with custom typography  \nConcept C: Icon + wordmark combination\n\nView all concepts: https://drive.google.com/logos-v2\n\nThoughts:\n- Concept A is bold and memorable, works great at small sizes\n- Concept B is clean and professional, very versatile\n- Concept C is more traditional but safe\n\nI personally think Concept A captures the innovative spirit of your product best, but I'm biased 😊\n\nLet me know which direction you prefer and I'll create the final files + brand guidelines.\n\nRachel",
+    "timestamp": "2025-11-21T10:45:00Z",
+    "read": false
+  },
+  {
+    "id": "18",
+    "sender": "noreply@calendar.google.com",
+    "subject": "Reminder: Team standup in 15 minutes",
+    "body": "This is a reminder for:\n\nTeam Standup\nToday at 10:00 AM - 10:15 AM (EST)\n\nJoin: https://meet.google.com/abc-defg-hij\n\nAttendees:\n- You\n- Sarah Chen\n- Michael Wong  \n- Alex Kumar\n- Jessica Thompson\n\nAgenda:\n- Quick updates from everyone\n- Blockers discussion\n- Sprint planning preview\n\nView event details | Join video call\n\nGoogle Calendar",
+    "timestamp": "2025-11-21T09:45:00Z",
+    "read": false
+  },
+  {
+    "id": "19",
+    "sender": "support@openai.com",
+    "subject": "Your OpenAI API usage is approaching the limit",
+    "body": "Hello,\n\nYour OpenAI API usage for November is approaching your monthly limit:\n\nCurrent usage: $427.50 / $500.00 (85%)\nEstimated overage: $150 at current rate\n\nTop models by cost:\n- GPT-4 Turbo: $312.40 (73%)\n- GPT-3.5 Turbo: $89.20 (21%)\n- Embeddings: $25.90 (6%)\n\nRecommendations:\n1. Increase your monthly limit to avoid service interruption\n2. Optimize prompts to reduce token usage\n3. Consider using GPT-3.5 for less complex tasks\n\nManage your usage: https://platform.openai.com/usage\nUpdate billing: https://platform.openai.com/billing\n\nNeed help optimizing? Check out our best practices guide.\n\nOpenAI Team",
+    "timestamp": "2025-11-21T02:30:00Z",
+    "read": false
+  },
+  {
+    "id": "20",
+    "sender": "james.wilson@college.edu",
+    "subject": "Guest lecture invitation - AI in Production",
+    "body": "Dear colleague,\n\nI hope this email finds you well. I'm reaching out because I teach a course on \"Applied AI Systems\" at Stanford and I think my students would benefit tremendously from hearing about your real-world experience building AI-powered applications.\n\nWould you be interested in giving a guest lecture (virtual or in-person)?\n\nTopic ideas:\n- Building production AI systems\n- Prompt engineering best practices  \n- Challenges of LLM integration\n- Your journey building AI products\n\nDetails:\n- Date: Flexible (January or February 2026)\n- Duration: 60 minutes (45 min talk + 15 min Q&A)\n- Compensation: $500 honorarium\n- Format: In-person (Palo Alto) or Zoom\n\nThe students are graduate-level CS majors, very technical and engaged. Past speakers have found it rewarding!\n\nLet me know if you're interested and we can find a date that works.\n\nBest regards,\nProfessor James Wilson\nComputer Science Department\nStanford University",
+    "timestamp": "2025-11-20T13:15:00Z",
+    "read": false
+  },
+  {
+    "id": "21",
+    "sender": "lisa.rodriguez@marketing.co",
+    "subject": "Blog post draft for review 📝",
+    "body": "Hey!\n\nI've finished the first draft of the blog post about our new AI features. Can you review it before I publish?\n\nTitle: \"How AI Agents Are Transforming Email Productivity\"\n\nDraft link: https://docs.google.com/blog-draft\n\nI tried to:\n- Explain the technology in simple terms\n- Include real customer success stories\n- Add screenshots and demos\n- Optimize for SEO (targeting \"AI email assistant\")\n\nFeedback needed on:\n1. Is the technical explanation accurate?\n2. Too much jargon or just right?\n3. Should I add more examples?\n\nDeadline: Need to publish by Monday for the product launch.\n\nThanks!\nLisa",
+    "timestamp": "2025-11-21T08:50:00Z",
+    "read": false
+  },
+  {
+    "id": "22",
+    "sender": "notifications@vercel.com",
+    "subject": "Deployment successful: prompt-driven-email (Production)",
+    "body": "✅ Deployment completed successfully\n\nProject: prompt-driven-email\nEnvironment: Production\nBranch: main\nCommit: a3f7c9d \"Add draft card UI component\"\nDomain: https://email-agent.vercel.app\n\nBuild time: 2m 34s\nDeployment time: 47s\n\nChanges:\n+ Added DraftCard.jsx component\n+ Enhanced AgentChat with markdown rendering  \n+ Updated LLM service for structured responses\n\nView deployment: https://vercel.com/deployments/xyz123\nVisit site: https://email-agent.vercel.app\n\nVercel",
+    "timestamp": "2025-11-21T11:15:00Z",
+    "read": false
+  },
+  {
+    "id": "23",
+    "sender": "kevin.chang@startup.io",
+    "subject": "Partnership opportunity?",
+    "body": "Hi,\n\nI'm the founder of TaskFlow, a project management tool for remote teams. We have 50k+ users and are growing 20% MoM.\n\nI came across your email productivity agent and I think there's a great partnership opportunity here. Many of our users struggle with email overload and your solution could be a perfect fit.\n\nIdeas:\n- Integration: Connect TaskFlow with your email agent\n- Co-marketing: Joint webinar or case study\n- Referral partnership: We send you users, you send us users\n\nWould you be open to exploring this? I'd love to set up a call to discuss.\n\nWe're backed by Y Combinator and have a strong distribution channel that could benefit both of us.\n\nLet me know!\n\nKevin Chang\nFounder & CEO, TaskFlow\nYC W23",
+    "timestamp": "2025-11-20T15:40:00Z",
+    "read": false
+  },
+  {
+    "id": "24",
+    "sender": "noreply@stackoverflow.com",
+    "subject": "Your question has 3 new answers",
+    "body": "Your question received new answers!\n\n\"How to handle rate limiting with OpenAI API in production?\"\n\nTop answer (15 upvotes):\n\"I've been using a token bucket algorithm with Redis for rate limiting. Here's a Python implementation that works well...\"\n\nView all answers: https://stackoverflow.com/q/12345678\n\nOther activity:\n- 247 views\n- 12 upvotes\n- 3 favorites\n\nYour reputation: 1,547 (+25 today)\n\nStack Overflow",
+    "timestamp": "2025-11-21T06:30:00Z",
+    "read": false
+  },
+  {
+    "id": "25",
+    "sender": "newsletter@hackernews.com",
+    "subject": "Top stories on Hacker News - Nov 21",
+    "body": "Top stories from Hacker News:\n\n1. Show HN: I built an AI email assistant that actually works (847 points)\n   https://news.ycombinator.com/item?id=38472634\n\n2. OpenAI announces GPT-5 with 10x better reasoning (1,234 points)\n\n3. Why I'm leaving Google after 10 years (923 points)\n\n4. The death of the junior developer (1,567 points)\n\n5. Building a startup in 2025: What's different? (456 points)\n\nDiscussions you might like:\n- \"Ask HN: Best practices for LLM prompt engineering?\"\n- \"Show HN: Open source alternative to Superhuman\"\n\nUnsubscribe | Customize digest",
+    "timestamp": "2025-11-21T07:00:00Z",
+    "read": false
+  }
+]
