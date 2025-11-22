@@ -4,8 +4,6 @@ import Card from './ui/Card';
 import Button from './ui/Button';
 import Input from './ui/Input';
 
-import { mockEmails } from '../data/mockData';
-
 const AgentChat = () => {
     const [messages, setMessages] = useState([
         { id: 1, type: 'agent', content: "Hello Alex! I've analyzed your inbox. You have 3 urgent emails from Sarah, the Product Team, and HR. Would you like me to draft replies for them?" },
@@ -31,33 +29,14 @@ const AgentChat = () => {
         setIsTyping(true);
 
         try {
-            // Construct context from mock emails
-            const emailContext = mockEmails.map(e =>
-                `From: ${e.sender} (${e.email})\nSubject: ${e.subject}\nBody: ${e.body}\nDate: ${e.date}\n`
-            ).join('\n---\n');
-
-            const systemPrompt = `You are Nexus, an intelligent email assistant. You have access to the user's inbox.
-            
-            Current Inbox Context:
-            ${emailContext}
-            
-            User Query: ${input}
-            
-            Instructions:
-            1. Answer based strictly on the inbox context provided above.
-            2. If the user asks to find emails, list the specific emails found in the context.
-            3. If the user asks to draft a reply, use the content of the email to draft a relevant response.
-            4. Be concise, professional, and helpful.
-            5. Do NOT give generic advice on how to search emails. actually perform the search within the provided context.`;
-
-            const response = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyCqYzOvah3FXI2Go9NDK5lsdhG6Vjqontk', {
+            const response = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyCqYzOvah3FXI2Go9NDK5lsdhG6Vjqontk', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
                     contents: [{
-                        parts: [{ text: systemPrompt }]
+                        parts: [{ text: input }]
                     }]
                 })
             });

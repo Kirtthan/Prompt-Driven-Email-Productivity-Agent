@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Inbox as InboxIcon, Send, FileText, Settings as SettingsIcon, Bot, Menu, Brain } from 'lucide-react';
+import { Inbox as InboxIcon, Send, FileText, Settings as SettingsIcon, Bot, Menu, Brain, Moon, Sun } from 'lucide-react';
 import Inbox from './components/Inbox';
 import AgentChat from './components/AgentChat';
 import DraftEditor from './components/DraftEditor';
@@ -9,12 +9,16 @@ import PromptBrain from './components/PromptBrain';
 function App() {
   const [activeTab, setActiveTab] = useState('inbox');
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [theme, setTheme] = useState('dark');
 
-  // Enforce light mode
-  useEffect(() => {
-    document.documentElement.classList.add('light');
-    document.documentElement.classList.remove('dark');
-  }, []);
+  const handleThemeChange = (newTheme) => {
+    setTheme(newTheme);
+    if (newTheme === 'light') {
+      document.documentElement.classList.add('light');
+    } else {
+      document.documentElement.classList.remove('light');
+    }
+  };
 
   const navItems = [
     { id: 'inbox', icon: InboxIcon, label: 'Inbox', badge: 3 },
@@ -80,6 +84,22 @@ function App() {
         </nav>
 
         <div className="p-4 border-t border-border-light space-y-4">
+          {/* Theme Toggle in Sidebar */}
+          <button
+            onClick={() => handleThemeChange(theme === 'dark' ? 'light' : 'dark')}
+            className={`
+              w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200
+              text-text-secondary hover:text-text-primary hover:bg-bg-hover
+            `}
+          >
+            {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+            {isSidebarOpen && (
+              <span className="font-medium">
+                {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
+              </span>
+            )}
+          </button>
+
           <div className={`flex items-center gap-3 ${!isSidebarOpen && 'justify-center'}`}>
             <div className="w-10 h-10 rounded-full bg-gradient-to-br from-accent-blue to-purple-500 border-2 border-white shadow-sm"></div>
             {isSidebarOpen && (
@@ -99,7 +119,7 @@ function App() {
           {activeTab === 'agent' && <AgentChat />}
           {activeTab === 'drafts' && <DraftEditor />}
           {activeTab === 'brain' && <PromptBrain />}
-          {activeTab === 'settings' && <Settings />}
+          {activeTab === 'settings' && <Settings theme={theme} onThemeChange={handleThemeChange} />}
           {activeTab === 'sent' && <div className="text-center py-20 text-text-tertiary">Sent Component Coming Soon</div>}
         </div>
       </main>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Bell, Globe, User } from 'lucide-react';
+import { Bell, Moon, Sun, Globe, Shield, User, Smartphone, Monitor } from 'lucide-react';
 import Card from './ui/Card';
 import Button from './ui/Button';
 import Input from './ui/Input';
@@ -31,7 +31,7 @@ const Toggle = ({ label, description, checked, onChange }) => (
     </div>
 );
 
-const Settings = () => {
+const Settings = ({ theme, onThemeChange }) => {
     const [notifications, setNotifications] = useState({
         email: true,
         desktop: false,
@@ -42,7 +42,37 @@ const Settings = () => {
         <div className="max-w-4xl mx-auto animate-fade-in font-sans">
             <h2 className="text-3xl font-bold text-text-primary mb-8 font-display">Settings</h2>
 
-            <h2 className="text-3xl font-bold text-text-primary mb-8 font-display">Settings</h2>
+            <SettingsSection title="Appearance" icon={Moon}>
+                <div className="grid grid-cols-3 gap-4 mb-6">
+                    <button
+                        onClick={() => onThemeChange('dark')}
+                        className={`p-4 rounded-xl border-2 text-center transition-all ${theme === 'dark' ? 'bg-white border-accent-blue shadow-md transform -translate-y-0.5' : 'bg-bg-tertiary border-border-light text-text-secondary hover:bg-bg-hover'}`}
+                    >
+                        <Moon size={24} className={`mx-auto mb-2 ${theme === 'dark' ? 'text-accent-blue' : 'text-text-tertiary'}`} />
+                        <p className={`text-sm font-medium ${theme === 'dark' ? 'text-text-primary' : 'text-text-secondary'}`}>Dark</p>
+                    </button>
+                    <button
+                        onClick={() => onThemeChange('light')}
+                        className={`p-4 rounded-xl border-2 text-center transition-all ${theme === 'light' ? 'bg-white border-accent-blue shadow-md transform -translate-y-0.5' : 'bg-bg-tertiary border-border-light text-text-secondary hover:bg-bg-hover'}`}
+                    >
+                        <Sun size={24} className={`mx-auto mb-2 ${theme === 'light' ? 'text-accent-blue' : 'text-text-tertiary'}`} />
+                        <p className={`text-sm font-medium ${theme === 'light' ? 'text-text-primary' : 'text-text-secondary'}`}>Light</p>
+                    </button>
+                    <button
+                        onClick={() => onThemeChange('system')}
+                        className={`p-4 rounded-xl border-2 text-center transition-all ${theme === 'system' ? 'bg-white border-accent-blue shadow-md transform -translate-y-0.5' : 'bg-bg-tertiary border-border-light text-text-secondary hover:bg-bg-hover'}`}
+                    >
+                        <Monitor size={24} className={`mx-auto mb-2 ${theme === 'system' ? 'text-accent-blue' : 'text-text-tertiary'}`} />
+                        <p className={`text-sm font-medium ${theme === 'system' ? 'text-text-primary' : 'text-text-secondary'}`}>System</p>
+                    </button>
+                </div>
+                <Toggle
+                    label="Reduced Motion"
+                    description="Minimize animations throughout the interface"
+                    checked={false}
+                    onChange={() => { }}
+                />
+            </SettingsSection>
 
             <SettingsSection title="Notifications" icon={Bell}>
                 <Toggle
